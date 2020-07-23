@@ -33,8 +33,22 @@ The file will be created on first time request to freedns.
 
 ## Requirements
 
-This script requires [jq](https://stedolan.github.io/jq/) and dig commands to be installed.  
-Installation on Debian like distros:
+This, theoretically, will run in any GNU/Linux distro with bash, or any *nix type OS with bash installed.  
+It will require [jq](https://stedolan.github.io/jq/) and dig commands to be present in your system.  
+Installation with a **HowTo** on some distros:  
+* Debian and its derivates
 ```bash
 sudo apt install dnsutils jq
+```
+* CentOs and derivates
+```bash
+sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && sudo yum install jq bind-utils
+```
+* Arch and derivatives
+```bash
+sudo pacman -S jq dnsutils
+```
+* Fedora and derivatives
+```bash
+sudo dnf install jq bind-utils
 ```
